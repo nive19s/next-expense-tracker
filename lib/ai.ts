@@ -65,7 +65,7 @@ export async function generateExpenseInsights(
     3. Money-saving opportunities
     4. Positive reinforcement for good habits
 
-    Return only valid JSON array, no additional text.`;
+    Return only valid JSON array,In your response make sure All the amounts are in Rupees(Rs ), no additional text.`;
 
     const completion = await openai.chat.completions.create({
       model: 'deepseek/deepseek-chat-v3-0324:free',
@@ -73,7 +73,7 @@ export async function generateExpenseInsights(
         {
           role: 'system',
           content:
-            'You are a financial advisor AI that analyzes spending patterns and provides actionable insights. Always respond with valid JSON only.',
+            'You are a financial advisor AI that analyzes spending patterns and provides actionable insights. Always respond with valid JSON only.All the amounts are in Rupees(Rs )',
         },
         {
           role: 'user',
