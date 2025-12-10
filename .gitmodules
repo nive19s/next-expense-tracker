@@ -1,0 +1,3 @@
+[submodule "my_repo_1"]
+	path = my_repo_1
+	url = https://nivethansothi19@dev.azure.com/nivethansothi19/Project1_Nivethan/_git/my_repo_1
